@@ -2,21 +2,17 @@ import {Link} from 'react-router-dom';
 
 function NavButtons() {
     return (
-        <div className='flex flex-row justify-center gap-3'>
-            <div>
+        <div className='flex flex-row justify-end gap-3'>
+            <a className='px-4 py-2 rounded-md bg-teal-300 border-2 inline-block border-teal-700 text-teal-800 hover:bg-teal-400 hover:cursor-pointer'>
                 <Link to='/'>
-                    <button className='px-4 py-2 rounded-md bg-orange-300 border-2  border-orange-700 text-orange-800 hover:bg-orange-400'>
-                        <strong>Home</strong>
-                    </button>
+                    <strong>Home</strong>
                 </Link>
-            </div>
-            <div>
+            </a>
+            <a className='px-4 py-2 rounded-md bg-teal-300 border-2 inline-block border-teal-700 text-teal-800  hover:bg-teal-400 hover:cursor-pointer'>
                 <Link to='/watchlist'>
-                    <button className='px-4 py-2 rounded-md bg-orange-300 border-2  border-orange-700 text-orange-800  hover:bg-orange-400'>
-                        <strong>Watchlist</strong>
-                    </button>
+                    <strong>Watchlist</strong>
                 </Link>
-            </div>
+            </a>
         </div>
     );
 }

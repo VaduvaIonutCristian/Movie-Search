@@ -8,10 +8,10 @@ function FilterButtons({onGenreChange, onRatingChange}) {
     };
 
     return (
-        <div className='flex flex-row self-end gap-3 pl-4 pr-4'>
+        <div className='flex flex-row gap-3 pl-4 '>
             <div className='px-4 py-2 rounded-md  text-orange-800 border-2 border-orange-700 bg-orange-300 hover:bg-orange-400'>
                 <form>
-                    <label htmlFor='genre' className='m-1'>
+                    <label htmlFor='genre' className='mr-1'>
                         <strong>Genre </strong>
                     </label>
                     <select
@@ -29,7 +29,7 @@ function FilterButtons({onGenreChange, onRatingChange}) {
             </div>
             <div className='px-4 py-2 rounded-md text-orange-800 border-2  border-orange-700 bg-orange-300 hover:bg-orange-400'>
                 <form id='rating'>
-                    <label htmlFor='rating' className='m-1'>
+                    <label htmlFor='rating' className='mr-1'>
                         <strong>Rating </strong>
                     </label>
                     <select
