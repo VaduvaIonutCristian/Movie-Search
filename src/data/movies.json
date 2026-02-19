@@ -4,139 +4,490 @@
     "title": "Dark Storm",
     "image": "1.jpg",
     "genre": "drama",
-    "rating": "8.3"
+    "rating": "8.3",
+    "year": 2023,
+    "director": "Michael Chen",
+    "description": "A powerful drama about a family facing adversity during a devastating storm. Through struggle and sacrifice, they discover the strength within themselves."
   },
   {
     "id": 2,
     "title": "Whisper of Fate",
     "image": "2.jpg",
     "genre": "fantasy",
-    "rating": "7.7"
+    "rating": "7.7",
+    "year": 2022,
+    "director": "Sarah Mitchell",
+    "description": "An enchanting fantasy journey where a young mage must uncover the secrets of ancient magic to save their kingdom from eternal darkness."
   },
   {
     "id": 3,
     "title": "Beyond the Edge",
     "image": "3.jpg",
     "genre": "horror",
-    "rating": "6.3"
+    "rating": "6.3",
+    "year": 2023,
+    "director": "David Lee",
+    "description": "A terrifying expedition to the edge of civilization reveals horrors that defy explanation. Survival becomes the only priority."
   },
   {
     "id": 4,
     "title": "Lost in Shadows",
     "image": "4.jpg",
     "genre": "action",
-    "rating": "9.3"
+    "rating": "9.3",
+    "year": 2023,
+    "director": "James Rodriguez",
+    "description": "An intense action thriller where a secret agent must navigate through dangerous territories to stop a global conspiracy."
   },
   {
     "id": 5,
     "title": "Echoes of Power",
     "image": "5.jpg",
     "genre": "fantasy",
-    "rating": "6.9"
+    "rating": "6.9",
+    "year": 2022,
+    "director": "Emily Watson",
+    "description": "Ancient powers awaken in a fantasy world as a group of unlikely heroes must master their abilities to prevent apocalypse."
   },
   {
     "id": 6,
     "title": "Grim Reckoning",
     "image": "6.jpg",
     "genre": "drama",
-    "rating": "8.4"
+    "rating": "8.4",
+    "year": 2023,
+    "director": "Christopher Cole",
+    "description": "A gripping drama exploring justice, revenge, and redemption as a man seeks answers about his past."
   },
   {
     "id": 7,
     "title": "Fury's Flight",
     "image": "7.jpg",
     "genre": "action",
-    "rating": "9.8"
+    "rating": "9.8",
+    "year": 2024,
+    "director": "Alex Johnson",
+    "description": "Breathtaking aerial combat and high-stakes action as elite pilots fight against overwhelming odds to save humanity."
   },
   {
     "id": 8,
     "title": "Path of the Forgotten",
     "image": "8.jpg",
     "genre": "action",
-    "rating": "7.2"
+    "rating": "7.2",
+    "year": 2022,
+    "director": "Marcus Stone",
+    "description": "A lone warrior walks a dangerous path seeking redemption, facing enemies both old and new in an unforgiving world."
   },
   {
     "id": 9,
     "title": "Nightmare's Threshold",
     "image": "9.jpg",
     "genre": "horror",
-    "rating": "1.7"
+    "rating": "1.7",
+    "year": 2021,
+    "director": "Tom Blake",
+    "description": "A psychological horror that blurs the line between dreams and reality as a person realizes their nightmares are becoming real."
   },
   {
     "id": 10,
     "title": "Eternal Hunt",
     "image": "10.jpg",
     "genre": "fantasy",
-    "rating": "7.5"
+    "rating": "7.5",
+    "year": 2023,
+    "director": "Rebecca Hunt",
+    "description": "An epic fantasy saga about legendary hunters pursuing a mystical creature that holds the key to eternal life."
   },
   {
     "id": 11,
     "title": "Legacy of the Void",
     "image": "11.jpg",
     "genre": "action",
-    "rating": "8.5"
+    "rating": "8.5",
+    "year": 2023,
+    "director": "Victor Kane",
+    "description": "A futuristic action epic where a elite team must venture into the void to retrieve a weapon that can change everything."
   },
   {
     "id": 12,
     "title": "Shadow's Crescent",
     "image": "12.jpg",
     "genre": "horror",
-    "rating": "7.5"
+    "rating": "7.5",
+    "year": 2024,
+    "director": "Lisa Morgan",
+    "description": "A gothic horror story where an ancient curse awakens during a crescent moon, bringing darkness and despair to a quiet town."
   },
   {
     "id": 13,
     "title": "Crimson Dawn",
     "image": "13.jpg",
     "genre": "fantasy",
-    "rating": "8.4"
+    "rating": "8.4",
+    "year": 2023,
+    "director": "Jordan Pierce",
+    "description": "A breathtaking fantasy where the rise of a new empire brings both hope and destruction to those caught in its path."
   },
   {
     "id": 14,
     "title": "Silent Kingdom",
     "image": "14.jpg",
     "genre": "fantasy",
-    "rating": "6.5"
+    "rating": "6.5",
+    "year": 2022,
+    "director": "Laura Bishop",
+    "description": "In a kingdom of eternal silence, one voice has the power to break the spell and unleash its long-buried secrets."
   },
   {
     "id": 15,
     "title": "Mystic Rite",
     "image": "15.jpg",
     "genre": "fantasy",
-    "rating": "9.8"
+    "rating": "9.8",
+    "year": 2024,
+    "director": "Adrian Cross",
+    "description": "An otherworldly fantasy masterpiece where ancient rituals and modern conflicts collide in a stunning magical spectacle."
   },
   {
     "id": 16,
     "title": "Reign of the Lost",
     "image": "16.jpg",
     "genre": "horror",
-    "rating": "9.1"
+    "rating": "9.1",
+    "year": 2023,
+    "director": "Nicholas Dark",
+    "description": "A terrifying horror where lost souls reclaim the world of the living, creating a nightmarish realm of eternal darkness."
   },
   {
     "id": 17,
     "title": "Timeless Myth",
     "image": "17.jpg",
     "genre": "drama",
-    "rating": "4.0"
+    "rating": "4.0",
+    "year": 2021,
+    "director": "Helen Wells",
+    "description": "A contemplative drama exploring how myths and legends shape human nature across generations."
   },
   {
     "id": 18,
     "title": "Oath of the Fallen",
     "image": "18.jpg",
     "genre": "fantasy",
-    "rating": "6.3"
+    "rating": "6.3",
+    "year": 2023,
+    "director": "Owen Brooks",
+    "description": "Fallen knights must band together to honor an ancient oath and defend the realm from those who would destroy it."
   },
   {
     "id": 19,
     "title": "Veil of Night",
     "image": "19.jpg",
     "genre": "drama",
-    "rating": "9.5"
+    "rating": "9.5",
+    "year": 2024,
+    "director": "Nina Summers",
+    "description": "A gripping drama about secrets, lies, and truth as a woman unravels the mysteries surrounding her mysterious husband."
   },
   {
     "id": 20,
     "title": "Guardians of Twilight",
     "image": "20.jpg",
     "genre": "horror",
-    "rating": "7.4"
-  }
+    "rating": "7.4",
+    "year": 2023,
+    "director": "Kyle Foster",
+    "description": "Ancient guardians awaken at twilight to protect humanity from an otherworldly force that seeks to consume all light."
+  },
+{
+  "id": 22,
+  "title": "Ashen Crown",
+  "image": "2.jpg",
+  "genre": "fantasy",
+  "rating": "8.1",
+  "year": 2024,
+  "director": "Selena Ward",
+  "description": "A young warrior must reclaim a mythical crown to stop an ancient darkness from consuming her homeland."
+},
+{
+  "id": 23,
+  "title": "Crimson Alley",
+  "image": "3.jpg",
+  "genre": "action",
+  "rating": "7.8",
+  "year": 2022,
+  "director": "Marcus Doyle",
+  "description": "A former hitman is forced out of retirement when a ruthless gang threatens his family."
+},
+{
+  "id": 24,
+  "title": "Hollow Whispers",
+  "image": "4.jpg",
+  "genre": "horror",
+  "rating": "7.5",
+  "year": 2021,
+  "director": "Ivy Nakamura",
+  "description": "A grieving mother begins hearing eerie whispers in her home that lead her to uncover a chilling truth."
+},
+{
+  "id": 25,
+  "title": "Shattered Paths",
+  "image": "5.jpg",
+  "genre": "drama",
+  "rating": "8.0",
+  "year": 2023,
+  "director": "Oliver Grant",
+  "description": "Two estranged brothers reunite after years apart, confronting the choices that tore their family apart."
+},
+{
+  "id": 26,
+  "title": "Steel Horizon",
+  "image": "6.jpg",
+  "genre": "action",
+  "rating": "8.4",
+  "year": 2024,
+  "director": "Rafael Moretti",
+  "description": "A rogue pilot leads a daring mission to stop a global weapons syndicate from launching a catastrophic attack."
+},
+{
+  "id": 27,
+  "title": "Moonlit Grove",
+  "image": "7.jpg",
+  "genre": "fantasy",
+  "rating": "7.9",
+  "year": 2022,
+  "director": "Amara Singh",
+  "description": "A healer discovers she is the last descendant of a forgotten magical bloodline tied to an ancient forest."
+},
+{
+  "id": 28,
+  "title": "The Forgotten Cellar",
+  "image": "8.jpg",
+  "genre": "horror",
+  "rating": "7.3",
+  "year": 2021,
+  "director": "Jonas Richter",
+  "description": "A couple renovating their new home uncovers a hidden cellar filled with disturbing relics and a sinister presence."
+},
+{
+  "id": 29,
+  "title": "Broken Lanterns",
+  "image": "9.jpg",
+  "genre": "drama",
+  "rating": "7.7",
+  "year": 2020,
+  "director": "Helena Brooks",
+  "description": "A small-town teacher fights to save her struggling community after a major factory shuts down."
+},
+{
+  "id": 30,
+  "title": "Nightfall Protocol",
+  "image": "10.jpg",
+  "genre": "action",
+  "rating": "8.2",
+  "year": 2023,
+  "director": "Sofia Delgado",
+  "description": "A cyber-security expert races against time to stop a digital attack that could collapse global infrastructure."
+},
+{
+  "id": 32,
+  "title": "The Pale Choir",
+  "image": "12.jpg",
+  "genre": "horror",
+  "rating": "7.6",
+  "year": 2022,
+  "director": "Haruto Yamane",
+  "description": "A remote monastery hides a terrifying secret as its choir begins singing songs no living person should know."
+},
+{
+  "id": 33,
+  "title": "Winter's Echo",
+  "image": "13.jpg",
+  "genre": "drama",
+  "rating": "8.1",
+  "year": 2021,
+  "director": "Daniel Park",
+  "description": "A retired musician returns to his hometown to confront the memories he left behind."
+},
+{
+  "id": 34,
+  "title": "Iron Rebellion",
+  "image": "14.jpg",
+  "genre": "action",
+  "rating": "7.9",
+  "year": 2024,
+  "director": "Clint Marrow",
+  "description": "A resistance fighter leads an uprising against a tyrannical regime controlling a dystopian megacity."
+},
+{
+  "id": 35,
+  "title": "The Silver Orchard",
+  "image": "15.jpg",
+  "genre": "fantasy",
+  "rating": "8.0",
+  "year": 2023,
+  "director": "Rina Solberg",
+  "description": "A young girl discovers a magical orchard where every fruit reveals a glimpse of the future."
+},
+{
+  "id": 36,
+  "title": "The Blackened Door",
+  "image": "16.jpg",
+  "genre": "horror",
+  "rating": "7.4",
+  "year": 2020,
+  "director": "Elias Monroe",
+  "description": "A mysterious door appears in a family's home, opening only at night to reveal terrifying visions."
+},
+{
+  "id": 37,
+  "title": "Fading Embers",
+  "image": "17.jpg",
+  "genre": "drama",
+  "rating": "7.8",
+  "year": 2022,
+  "director": "Mira Patel",
+  "description": "A firefighter grapples with trauma after a tragic rescue mission changes his life forever."
+},
+{
+  "id": 38,
+  "title": "Shadow Circuit",
+  "image": "18.jpg",
+  "genre": "action",
+  "rating": "8.3",
+  "year": 2023,
+  "director": "Victor Hale",
+  "description": "An underground racer becomes entangled in a deadly conspiracy involving illegal tech enhancements."
+},
+{
+  "id": 39,
+  "title": "Thornspire",
+  "image": "19.jpg",
+  "genre": "fantasy",
+  "rating": "8.2",
+  "year": 2024,
+  "director": "Elara Quinn",
+  "description": "A reluctant hero must climb a cursed tower that reshapes itself with every step."
+},
+{
+  "id": 40,
+  "title": "The Murmuring Lake",
+  "image": "20.jpg",
+  "genre": "horror",
+  "rating": "7.7",
+  "year": 2021,
+  "director": "Gareth Lowe",
+  "description": "A group of campers discovers that the lake they’re staying near whispers their deepest fears back to them."
+},
+{
+  "id": 41,
+  "title": "Glass Horizons",
+  "image": "1.jpg",
+  "genre": "drama",
+  "rating": "8.4",
+  "year": 2023,
+  "director": "Nadia Flores",
+  "description": "An architect struggles to rebuild her life after a devastating personal loss threatens her career."
+},
+{
+  "id": 42,
+  "title": "Redline Siege",
+  "image": "2.jpg",
+  "genre": "action",
+  "rating": "7.6",
+  "year": 2022,
+  "director": "Tobias Crane",
+  "description": "A tactical team must infiltrate a hijacked subway system before the city descends into chaos."
+},
+{
+  "id": 43,
+  "title": "Starwoven",
+  "image": "3.jpg",
+  "genre": "fantasy",
+  "rating": "8.6",
+  "year": 2024,
+  "director": "Maeve Rowan",
+  "description": "A celestial mapmaker discovers she can manipulate constellations, altering fate itself."
+},
+{
+  "id": 44,
+  "title": "The Red Lantern House",
+  "image": "4.jpg",
+  "genre": "horror",
+  "rating": "7.8",
+  "year": 2023,
+  "director": "Lucien Hart",
+  "description": "A journalist investigates a haunted house where every lantern reveals a different ghostly memory."
+},
+{
+  "id": 45,
+  "title": "Silent Bridges",
+  "image": "5.jpg",
+  "genre": "drama",
+  "rating": "7.9",
+  "year": 2021,
+  "director": "Caroline Meyer",
+  "description": "A social worker fights to protect vulnerable children while confronting her own troubled past."
+},
+{
+  "id": 46,
+  "title": "Viper Strike",
+  "image": "6.jpg",
+  "genre": "action",
+  "rating": "8.1",
+  "year": 2024,
+  "director": "Darius Cole",
+  "description": "An elite operative hunts down a rogue agent who threatens global stability."
+},
+{
+  "id": 47,
+  "title": "The Gilded Realm",
+  "image": "7.jpg",
+  "genre": "fantasy",
+  "rating": "8.3",
+  "year": 2023,
+  "director": "Isolde Marin",
+  "description": "A prince cursed with immortality seeks a way to break the spell before his kingdom collapses."
+},
+{
+  "id": 48,
+  "title": "Night Harvest",
+  "image": "8.jpg",
+  "genre": "horror",
+  "rating": "7.5",
+  "year": 2022,
+  "director": "Rowan Pierce",
+  "description": "A rural town is terrorized by a creature that emerges only during the annual harvest festival."
+},
+{
+  "id": 49,
+  "title": "Paper Suns",
+  "image": "9.jpg",
+  "genre": "drama",
+  "rating": "8.2",
+  "year": 2024,
+  "director": "Elena Torres",
+  "description": "A young immigrant navigates love, identity, and ambition while chasing her dream of becoming an artist."
+},
+{
+  "id": 50,
+  "title": "Blaze Runner",
+  "image": "10.jpg",
+  "genre": "action",
+  "rating": "8.0",
+  "year": 2023,
+  "director": "Kenji Morita",
+  "description": "A firefighter-turned-fugitive must clear his name after being framed for a deadly arson attack."
+},
+{
+  "id": 31,
+  "title": "Eclipsebound",
+  "image": "11.jpg",
+  "genre": "fantasy",
+  "rating": "8.4",
+  "year": 2024,
+  "director": "Thalia Rivers",
+  "description": "A scholar discovers a prophecy linking her to a cosmic event that could reshape the world."
+}
+
 ]

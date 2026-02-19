@@ -1,24 +1,38 @@
 import SearchBar from './SearchBar';
 import NavBar from './NavButtons';
-import FilterResult from './FilterButtons';
+import FilterButtons from './FilterButtons';
 
-function Header({onSearchChange, onGenreChange, onRatingChange}) {
+function Header({
+    onSearchChange,
+    onGenreChange,
+    onRatingChange,
+    genre,
+    rating,
+}) {
     return (
-        <header className=''>
-            <div className='flex flex-row items-center justify-between mx-20'>
-                <div className=' flex-col items-center'>
-                    <h1 className=' text-6xl p-4 tracking-widest font-semibold'>
+        <header className='flex flex-col '>
+            <div
+                className='
+                    flex flex-col items-center
+                    md:flex-row md:justify-between
+                    px-4 sm:px-8 md:px-20
+                    py-6 gap-8'
+            >
+                <div className='flex flex-col items-center text-center md:items-start  md:text-left w-full md:w-auto'>
+                    <h1 className=' txt-2xl sm:text-3xl md:text-5xl lg:text-6xl p-2 tracking-widest font-semibold'>
                         Find your{' '}
                         <strong className='text-teal-600 '>Movies</strong>
                     </h1>
                     <SearchBar onSearch={onSearchChange} />
                 </div>
-                <div className='flex flex-col gap-5 mt-5'>
+                <div className='flex flex-col items-center md:items-end gap-3 w-full md:w-auto'>
                     <NavBar />
-                    <div className=''>
-                        <FilterResult
+                    <div className='flex flex-'>
+                        <FilterButtons
                             onGenreChange={onGenreChange}
                             onRatingChange={onRatingChange}
+                            genre={genre}
+                            rating={rating}
                         />
                     </div>
                 </div>

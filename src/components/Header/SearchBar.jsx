@@ -14,20 +14,20 @@ function SearchBar({onSearch}) {
     };
 
     return (
-        <div className='border rounded-md'>
+        <div className='border rounded-md w-full sm:w-80 md:w-96'>
             <form onSubmit={handleSubmit} className='flex items-center'>
                 <input
                     type='text'
                     placeholder='Search movies...'
-                    className='flex-1 px-3 py-2 text-teal-800 animate-pulse tracking-widest w-100'
+                    className='flex-1 min-w-0 px-2 sm:px-3 py-2 text-teal-800 tracking-widest text-sm sm:text-base'
                     value={query}
                     onChange={handleChange}
                 />
                 <button
                     type='submit'
-                    className='flex-none p-1  border-l-3 border-l-teal-500'
+                    className='flex-none p-1 sm:p-2 border-l-3 border-l-teal-500 hover:bg-teal-50 transition'
                 >
-                    <i className='fa-solid fa-magnifying-glass'></i>
+                    <i className='fa-solid fa-magnifying-glass text-sm sm:text-base'></i>
                 </button>
             </form>
         </div>
