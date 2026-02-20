@@ -1,16 +1,10 @@
 import {Outlet} from 'react-router-dom';
 import Header from '../Header/Header';
 
-function Layout(props) {
+function Layout() {
     return (
         <>
-            <Header
-                onSearchChange={props.onSearchChange}
-                onGenreChange={props.onGenreChange}
-                onRatingChange={props.onRatingChange}
-                genre={props.genre}
-                rating={props.rating}
-            />
+            <Header />
             <main>
                 <Outlet />
             </main>

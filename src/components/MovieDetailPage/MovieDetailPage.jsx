@@ -1,10 +1,14 @@
 import {useParams, useNavigate} from 'react-router-dom';
 import {useMemo} from 'react';
 import movies from '../../data/movies.json';
+import {useDispatch, useSelector} from 'react-redux';
+import {add as addToWatchlistAction, remove as removeFromWatchlistAction} from '../../store/watchlistSlice';
 
-function MovieDetailPage({addToWatchlist, removeFromWatchlist, watchlist}) {
+function MovieDetailPage() {
     const {id} = useParams();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const watchlist = useSelector((state) => state.watchlist);
 
     const movie = useMemo(() => {
         return movies.find((m) => m.id === Number(id));
@@ -99,7 +103,7 @@ function MovieDetailPage({addToWatchlist, removeFromWatchlist, watchlist}) {
                     <div className='flex gap-3 mt-6 flex-col sm:flex-row'>
                         {isSaved ? (
                             <button
-                                onClick={() => removeFromWatchlist(movie)}
+                                onClick={() => dispatch(removeFromWatchlistAction(movie.id))}
                                 className='flex-1 bg-red-600 hover:bg-red-700 text-white py-3 rounded-md font-semibold transition flex items-center justify-center gap-2'
                             >
                                 <i className='fa-solid fa-heart-circle-xmark'></i>
@@ -107,7 +111,7 @@ function MovieDetailPage({addToWatchlist, removeFromWatchlist, watchlist}) {
                             </button>
                         ) : (
                             <button
-                                onClick={() => addToWatchlist(movie)}
+                                onClick={() => dispatch(addToWatchlistAction(movie))}
                                 className='flex-1 bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-md font-semibold transition flex items-center justify-center gap-2'
                             >
                                 <i className='fa-solid fa-heart-circle-plus'></i>

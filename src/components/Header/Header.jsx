@@ -2,13 +2,7 @@ import SearchBar from './SearchBar';
 import NavBar from './NavButtons';
 import FilterButtons from './FilterButtons';
 
-function Header({
-    onSearchChange,
-    onGenreChange,
-    onRatingChange,
-    genre,
-    rating,
-}) {
+function Header() {
     return (
         <header className='flex flex-col '>
             <div
@@ -23,17 +17,12 @@ function Header({
                         Find your{' '}
                         <strong className='text-teal-600 '>Movies</strong>
                     </h1>
-                    <SearchBar onSearch={onSearchChange} />
+                    <SearchBar />
                 </div>
                 <div className='flex flex-col items-center md:items-end gap-3 w-full md:w-auto'>
                     <NavBar />
                     <div className='flex flex-'>
-                        <FilterButtons
-                            onGenreChange={onGenreChange}
-                            onRatingChange={onRatingChange}
-                            genre={genre}
-                            rating={rating}
-                        />
+                        <FilterButtons />
                     </div>
                 </div>
             </div>

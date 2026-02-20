@@ -1,11 +1,14 @@
-function MovieCard({
-    movie,
-    addToWatchlist,
-    removeFromWatchlist,
-    watchlist,
-    cardGenre,
-    onMovieClick,
-}) {
+import {useSelector, useDispatch} from 'react-redux';
+import {
+    add as addToWatchlistAction,
+    remove as removeFromWatchlistAction,
+} from '../../store/watchlistSlice';
+import {setGenre} from '../../store/filtersSlice';
+import {setSelectedMovie} from '../../store/modalSlice';
+
+function MovieCard({movie}) {
+    const dispatch = useDispatch();
+    const watchlist = useSelector((state) => state.watchlist);
     let ratingColor = 'bg-gray-600';
 
     if (movie.rating >= 8) {
@@ -19,13 +22,11 @@ function MovieCard({
     const isSaved = watchlist.some((m) => m.id === movie.id);
 
     const handleCardClick = () => {
-        if (onMovieClick) {
-            onMovieClick(movie);
-        }
+        dispatch(setSelectedMovie(movie));
     };
 
     return (
-        <div className='flex flex-col items-center max-w-lg border-4 rounded-xl bg-teal-800 h-full hover:shadow-lg hover:shadow-orange-500 transition cursor-pointer'>
+        <div className='flex flex-col items-center max-w-lg border-4 rounded-xl bg-teal-800 h-full hover:shadow-lg hover:shadow-teal-900 transition cursor-pointer'>
             <div onClick={handleCardClick} className='w-full cursor-pointer'>
                 <img
                     src={`/images/${movie.image}`}
@@ -43,7 +44,7 @@ function MovieCard({
                 <button
                     onClick={(e) => {
                         e.stopPropagation();
-                        cardGenre(movie.genre);
+                        dispatch(setGenre(movie.genre));
                     }}
                     className='bg-gray-900 rounded-md px-1 sm:px-2 py-1 text-white text-xs sm:text-sm hover:bg-orange-400 transition'
                 >
@@ -59,7 +60,7 @@ function MovieCard({
                     <button
                         onClick={(e) => {
                             e.stopPropagation();
-                            removeFromWatchlist(movie);
+                            dispatch(removeFromWatchlistAction(movie.id));
                         }}
                         className='bg-red-600 hover:bg-red-700 rounded-md px-1 sm:px-2 py-1 text-white text-xs sm:text-sm transition'
                     >
@@ -69,7 +70,7 @@ function MovieCard({
                     <button
                         onClick={(e) => {
                             e.stopPropagation();
-                            addToWatchlist(movie);
+                            dispatch(addToWatchlistAction(movie));
                         }}
                         className='bg-gray-900 rounded-md px-1 sm:px-2 py-1 text-white text-xs sm:text-sm hover:bg-orange-400 transition'
                     >

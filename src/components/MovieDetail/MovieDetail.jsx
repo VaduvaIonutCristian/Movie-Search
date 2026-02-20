@@ -1,15 +1,19 @@
 import {useNavigate} from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
+import {
+    add as addToWatchlistAction,
+    remove as removeFromWatchlistAction,
+} from '../../store/watchlistSlice';
+import {clearSelectedMovie} from '../../store/modalSlice';
 
-function MovieDetail({
-    movie,
-    onClose,
-    addToWatchlist,
-    removeFromWatchlist,
-    watchlist,
-}) {
+function MovieDetail() {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const watchlist = useSelector((state) => state.watchlist);
+    const selectedMovie = useSelector((state) => state.modal.selectedMovie);
 
-    if (!movie) return null;
+    if (!selectedMovie) return null;
+    const movie = selectedMovie;
 
     let ratingColor = 'bg-gray-600';
     if (movie.rating >= 8) {
@@ -27,7 +31,7 @@ function MovieDetail({
             <div className='bg-teal-900 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto flex flex-col'>
                 <div className='flex justify-end p-4'>
                     <button
-                        onClick={onClose}
+                        onClick={() => dispatch(clearSelectedMovie())}
                         className='text-white hover:bg-teal-700 p-2 rounded-md transition'
                     >
                         <i className='fa-solid fa-times text-xl'></i>
@@ -85,7 +89,11 @@ function MovieDetail({
                         <div className='flex gap-3'>
                             {isSaved ? (
                                 <button
-                                    onClick={() => removeFromWatchlist(movie)}
+                                    onClick={() =>
+                                        dispatch(
+                                            removeFromWatchlistAction(movie.id),
+                                        )
+                                    }
                                     className='flex-1 bg-red-600 hover:bg-red-700 text-white py-3 rounded-md font-semibold transition flex items-center justify-center gap-2'
                                 >
                                     <i className='fa-solid fa-heart-circle-xmark'></i>
@@ -93,7 +101,9 @@ function MovieDetail({
                                 </button>
                             ) : (
                                 <button
-                                    onClick={() => addToWatchlist(movie)}
+                                    onClick={() =>
+                                        dispatch(addToWatchlistAction(movie))
+                                    }
                                     className='flex-1 bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-md font-semibold transition flex items-center justify-center gap-2'
                                 >
                                     <i className='fa-solid fa-heart-circle-plus'></i>
@@ -101,7 +111,7 @@ function MovieDetail({
                                 </button>
                             )}
                             <button
-                                onClick={onClose}
+                                onClick={() => dispatch(clearSelectedMovie())}
                                 className='flex-1 bg-gray-700 hover:bg-gray-600 text-white py-3 rounded-md font-semibold transition'
                             >
                                 Close
@@ -110,7 +120,7 @@ function MovieDetail({
                         <button
                             onClick={() => {
                                 navigate(`/movies/${movie.id}`);
-                                onClose();
+                                dispatch(clearSelectedMovie());
                             }}
                             className='w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-md font-semibold transition flex items-center justify-center gap-2'
                         >

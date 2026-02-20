@@ -1,14 +1,17 @@
 import {useState} from 'react';
+import {useDispatch} from 'react-redux';
+import {setSearch} from '../../store/filtersSlice';
 
-function SearchBar({onSearch}) {
+function SearchBar() {
     const [query, setQuery] = useState('');
+
+    const dispatch = useDispatch();
 
     const handleChange = (e) => {
         const value = e.target.value;
         setQuery(value);
-        onSearch(value);
+        dispatch(setSearch(value));
     };
-
     const handleSubmit = (e) => {
         e.preventDefault();
     };

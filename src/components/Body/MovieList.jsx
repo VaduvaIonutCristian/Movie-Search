@@ -1,16 +1,16 @@
 import MovieCard from './MovieCard';
 import Paginate from './Paginate';
+import {useSelector, useDispatch} from 'react-redux';
+import {setCurrentPage} from '../../store/paginationSlice';
+import {filterAndSortMovies} from '../../store/selectors';
+import movies from '../../data/movies.json';
 
-function MovieList({
-    filtered,
-    addToWatchlist,
-    removeFromWatchlist,
-    watchlist,
-    cardGenre,
-    onMovieClick,
-    currentPage,
-    onPageChange,
-}) {
+function MovieList() {
+    const dispatch = useDispatch();
+    const filters = useSelector((state) => state.filters);
+    const currentPage = useSelector((state) => state.pagination.currentPage);
+
+    const filtered = filterAndSortMovies(movies, filters);
     const itemsPerPage = 10;
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
@@ -20,21 +20,13 @@ function MovieList({
         <>
             <div className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 lg:grid-cols-5 '>
                 {paginatedMovies.map((movie) => (
-                    <MovieCard
-                        key={movie.id}
-                        movie={movie}
-                        addToWatchlist={addToWatchlist}
-                        removeFromWatchlist={removeFromWatchlist}
-                        watchlist={watchlist}
-                        cardGenre={cardGenre}
-                        onMovieClick={onMovieClick}
-                    />
+                    <MovieCard key={movie.id} movie={movie} />
                 ))}
             </div>
             <Paginate
                 items={filtered.length}
                 currentPage={currentPage}
-                onPageChange={onPageChange}
+                onPageChange={(p) => dispatch(setCurrentPage(p))}
             />
         </>
     );

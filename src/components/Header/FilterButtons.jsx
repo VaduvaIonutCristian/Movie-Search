@@ -1,10 +1,17 @@
-function FilterButtons({onGenreChange, onRatingChange, genre, rating}) {
+import {useSelector, useDispatch} from 'react-redux';
+import {setGenre, setRating} from '../../store/filtersSlice';
+
+function FilterButtons() {
+    const dispatch = useDispatch();
+    const filters = useSelector((state) => state.filters);
+    const {genre, rating} = filters;
+
     const handleGenre = (e) => {
-        if (onGenreChange) onGenreChange(e.target.value || '');
+        dispatch(setGenre(e.target.value || null));
     };
 
     const handleRating = (e) => {
-        if (onRatingChange) onRatingChange(e.target.value || '');
+        dispatch(setRating(e.target.value || null));
     };
 
     return (

@@ -1,8 +1,4 @@
-export default function Paginate({
-    items,
-    currentPage,
-    onPageChange,
-}) {
+export default function Paginate({items, currentPage, onPageChange}) {
     const itemsPerPage = 10;
     const totalPages = Math.ceil(items / itemsPerPage);
 
@@ -19,7 +15,9 @@ export default function Paginate({
                 Page {currentPage} of {totalPages}
             </span>
             <button
-                onClick={() => onPageChange(Math.min(totalPages, currentPage + 1))}
+                onClick={() =>
+                    onPageChange(Math.min(totalPages, currentPage + 1))
+                }
                 disabled={currentPage === totalPages}
                 className='text-teal-600 hover:underline disabled:opacity-50 disabled:cursor-not-allowed'
             >
